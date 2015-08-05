@@ -1,27 +1,51 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>jQuery UI 拖動（Draggable） - 默認功能</title>
-  <link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
-  <script src="//code.jquery.com/jquery-1.9.1.js"></script>
-  <script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
-  <link rel="stylesheet" href="http://jqueryui.com/resources/demos/style.css">
-  <style>
-  #draggable { width: 150px; height: 150px; padding: 0.5em; }
-  </style>
-  <script>
-  $(function() {
-    $( "#draggable" ).draggable();
-  });
-  </script>
-</head>
-<body>
- 
-<div id="draggable" class="ui-widget-content">
-  <p>請拖動我！</p>
-</div>
- 
- 
-</body>
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>medicine</title>
+		<link rel="stylesheet" type="text/css" href="/medicine/test.css" />
+		<!-- img view port responsive -->
+		<style>
+			img {
+				height: 100vh;
+			}
+		</style>
+		<!-- CDN jQuery -->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js">
+		</script>
+		<!-- image map resize for img responsive
+		<script src="/medicine/imageMapResizer.min.js"> -->
+		</script>
+		<script>
+			$(document).ready(function(){
+				$('map').imageMapResize();
+			});
+		</script>
+		<!-- CDN ngJS -->
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js">
+		</script>
+	</head>
+	<body>
+		<!--
+		<div ng-app="" ng-init="quantity=1;price=5">
+			<h2>價格計算器</h2>
+			數量： <input type="number" ng-model="quantity">
+			價格： <input type="number" ng-model="price">
+			<p><b>總價：</b> {{ quantity * price }}</p>
+		</div>
+		-->
+		
+		<div ng-app="" ng-init="names=['Jani','Hege','Kai']">
+			<p>使用 ng-repeat 來循環數組</p>
+			<ul>
+				<li ng-repeat="x in names">
+				{{ x }}
+				</li>
+			</ul>
+		<div>
+		<script src="//www.runoob.com/try/angularjs/1.2.5/angular.min.js"></script>
+		
+		<!-- <img class="vh" src="/medicine/surface_anatomy-anterior.jpg" usemap="#"/>
+		<img class="vh" src="\medicine\surface_anatomy-posterior.jpg" usemap="#"/> -->
+		
+	</body>
 </html>
